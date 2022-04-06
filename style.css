@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+button:hover {
+  cursor: pointer;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  gap: 2rem;
+}
+header {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.heading-2 {
+  /* font-size: 1rem; */
+  font-weight: 300;
+}
+form {
+  display: flex;
+  margin: 0 auto;
+}
+.input-search {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ff5b03;
+  border-radius: 1.5rem 0 0 1.5rem;
+  outline: none;
+  font-weight: 400;
+  color: #ff5b03;
+  width: 500px;
+  font-size: 1.2rem;
+}
+.input-search::placeholder {
+  color: #c43b0587;
+}
+.btn-search {
+  padding: 0.5rem 1rem;
+  background-color: #ff5b03;
+  color: white;
+  border: 1px solid #ff5b03;
+  font-size: 1.5rem;
+  border-radius: 0 1.5rem 1.5rem 0;
+}
+.container {
+  width: 95vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem;
+  gap: 2rem;
+}
+.card {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.301);
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.meal-img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+
+  height: 350px;
+}
+.get-repice {
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: #ff5b03;
+  color: white;
+}
+.recipe {
+  padding: 2rem;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 70vh;
+  background-color: #ff5b03;
+  color: white;
+  overflow: auto;
+}
+.close-recipe {
+  font-size: 2rem;
+  top: 5px;
+  position: absolute;
+  right: 10px;
+  background-color: inherit;
+  border: none;
+  color: white;
+}
+.recipe::-webkit-scrollbar {
+  width: 10px;
+}
+
+.recipe::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.recipe::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.629);
+  box-shadow: inset 0 0 6px rgb(255, 238, 238);
+}
+.recipe-category {
+  padding: 0.2rem 1rem;
+  background-color: #ffffff;
+  color: #ff5b03;
+  display: inline-block;
+  margin: 0.3rem;
+}
+.text {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
